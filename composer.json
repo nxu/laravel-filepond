@@ -1,5 +1,5 @@
 {
-    "name": "rahulhaque/laravel-filepond",
+    "name": "nxu/laravel-filepond",
     "description": "Dead simple Laravel backend support for FilePond",
     "keywords": [
         "filepond-laravel",
@@ -13,6 +13,11 @@
         {
             "name": "Rahul Haque",
             "email": "rahulhaque07@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Zsolt Fekete",
+            "email": "zsolt@fws.hu",
             "role": "Developer"
         }
     ],
