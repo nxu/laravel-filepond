@@ -106,14 +106,14 @@ abstract class AbstractFilepond
         }
 
         if ($this->getIsMultipleUpload()) {
-            $this->fieldModel = Filepond::owned()
+            $this->fieldModel = Filepond::query()
                 ->whereIn('id', (new Collection($this->getFieldValue()))->pluck('id'))
                 ->get();
             return $this;
         }
 
         $input = $this->getFieldValue();
-        $this->fieldModel = Filepond::owned()
+        $this->fieldModel = Filepond::query()
             ->where('id', $input['id'])
             ->first();
         return $this;
